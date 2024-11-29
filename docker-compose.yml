@@ -31,7 +31,7 @@ services:
     image: nginx:latest
     container_name: nginx
     ports:
-      - "80:80" # Nginx 포트
+      - "8010:80" # Nginx 호스트 포트를 8010으로 변경
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     depends_on:
